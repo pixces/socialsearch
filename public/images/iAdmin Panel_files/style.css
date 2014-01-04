@@ -1,0 +1,607 @@
+@charset "utf-8";
+
+body{
+    font-size: 14px;
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'Source Sans Pro', sans-serif, Arial, Tahoma;
+    padding: 0;
+    margin: 0;
+}
+
+h1,h2,h3,h4{
+    font-family: 'Ropa Sans', sans-serif;
+}
+
+h1{
+    font-size: 24px;
+}
+
+h2{
+    font-size: 20px;
+}
+
+h3{
+    font-size: 18px;
+}
+
+h1 a.addlink{
+    font-size: 12px;
+    padding:5px 10px;
+    background-color: #999;
+    border-radius: 6px;
+    margin-left: 15px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+/* FORM CONTROLS -------------------------------------------------------------- */
+
+label{
+    font-weight: bold;
+}
+
+.help-block{
+    font-size: 12px;
+}
+
+/* PAGE TOP -------------------------------------------------------------- */
+
+#page-top-outer	{
+    background: url(../images/cms/top_bg.jpg) top center repeat-x;
+    border-bottom: 1px solid #7e7e7e;
+    height: 92px;
+    text-align: left;
+}
+#page-top-inner,
+#page-body-inner {
+    max-width: 1200px;
+    min-width: 780px;
+	margin: 0 auto 0 auto;
+	padding: 0;
+    text-align: left;
+}
+
+#logo {
+	float: left;
+	text-decoration: none;
+}
+
+#logo h2 {
+	background: url(../images/cms/cms-logo.png) no-repeat scroll 2px 1px;
+	display: inline-block;
+	height: 50px;
+	text-indent: -5000px;
+	vertical-align: middle;
+	width: 240px;
+}
+
+#top-welcome {
+	float: right;
+	vertical-align: middle;
+	padding-top: 35px;
+	color: #FFF;
+	font-size: 12px;
+}
+
+#top-welcome .logout {
+	text-indent: -5000px;
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+}
+
+#top-welcome a {
+	text-decoration: none;
+	color: #DBDBDB;
+}
+
+/* TOP NAVIGATION -------------------------------------------------------------- */
+
+#navbar {
+	float: left;
+	width: 700px;
+	padding: 20px 0px 0px 20px;
+}
+
+#navbar ul#nav {
+	clear: none;
+	display: inline-block;
+	float: none;
+	line-height: 18px;
+	margin: 0px;
+	padding: 0px;
+}
+
+#navbar ul#nav li {
+	display: inline-block;
+	font-weight: normal;
+	margin: 0;
+	vertical-align: bottom;
+}
+
+#navbar ul#nav li a {
+	color: #999999;
+	display: inline-block;
+	height: 32px;
+	text-align: center;
+	width: 70px;
+	text-decoration: none;
+}
+
+#navbar ul#nav li a i {
+	background: url("../images/zb-sprites.png") no-repeat scroll 500px 500px transparent;
+	display: block;
+	height: 35px;
+	margin: 0 auto;
+	width: 35px;
+}
+
+#navbar ul#nav li.on {
+	font-weight: normal;
+}
+
+#navbar ul#nav li {
+	display: inline-block;
+	font-weight: normal;
+	margin: 0;
+}
+
+#navbar ul#nav li.on a,
+#navbar ul#nav li a:hover {
+	color: #FFFFFF;
+}
+
+#navbar ul#nav li.dashboard a i {
+	background-position: 0px -5px;
+}
+
+#navbar ul#nav li.categories a i {
+	background-position: -72px -42px;
+}
+
+#navbar ul#nav li.courses a i {
+	background-position: -110px -42px;
+}
+
+#navbar ul#nav li.recipes a i {
+	background-position: -146px -42px;
+}
+
+#navbar ul#nav li.tips a i {
+	background-position: -181px -42px;
+}
+
+#navbar ul#nav li.queries a i {
+    background-position: -216px -42px;
+}
+
+#navbar ul#nav li.pages a i {
+	background-position: -252px -42px;
+}
+
+#navbar ul#nav li.users a i {
+	background-position: -287px -42px;
+}
+
+#navbar ul#nav li.dashboard a:hover i,
+#navbar ul#nav li.dashboard.on a i
+	{
+	background-position: 0px -4px;
+}
+
+#navbar ul#nav li.categories a:hover i,
+#navbar ul#nav li.categories.on a i
+	{
+	background-position: -72px -4px;;
+}
+
+#navbar ul#nav li.courses a:hover i,
+#navbar ul#nav li.courses.on a i
+	{
+	background-position: -110px -4px;
+}
+
+#navbar ul#nav li.recipes a:hover i,
+#navbar ul#nav li.recipes.on a i
+	{
+	background-position: -146px -4px;
+}
+
+#navbar ul#nav li.tips a:hover i,
+#navbar ul#nav li.tips.on a i
+	{
+	background-position: -181px -4px;
+}
+
+#navbar ul#nav li.queries a:hover i,
+#navbar ul#nav li.queries.on a i
+{
+    background-position: -216px -4px;
+}
+
+#navbar ul#nav li.pages a:hover i,
+#navbar ul#nav li.pages.on a i
+	{
+	background-position: -252px -4px;
+}
+
+#navbar ul#nav li.users a:hover i,
+#navbar ul#nav li.users.on a i
+	{
+	background-position: -287px -4px;
+}
+
+/* MAIN BODY -------------------------------------------------------------- */
+#page-body-outer {
+	min-height: 300px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+#page-body-inner {
+    padding: 0px 20px;
+    text-align: left;
+}
+
+#page-body-inner h1{
+    margin-top: 0px;
+}
+
+ul.breadcrumb{
+    padding-top:4px;
+    padding-bottom: 4px;
+}
+
+
+/* ADD STREAM BOX ------------------------------------------------------ */
+.box{
+    padding: 25px 0 10px 0;
+    margin-bottom: 25px;
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+
+}
+
+.box-shadow
+{
+    -moz-border-radius: 10px; /* Firefox */
+    -webkit-border-radius: 10px; /* Safari and Chrome */
+    border-radius: 10px; /* Opera 10.5+, future browsers, and now also our behavior htc file */
+
+    -moz-box-shadow: 0px 1px 10px #eee; /* Firefox */
+    -webkit-box-shadow: 0px 1px 10px #eee; /* Safari and Chrome */
+    box-shadow: 0px 1px 10px #eee; /* Opera 10.5+, future browsers and IE6+ using our behavior htc file */
+
+}
+
+/* FLOAT -------------------------------------------------------------- */
+#col-left{
+    width: 35%;
+}
+
+#col-right{
+    width: 60%;
+}
+
+/* TABLE Columns-------------------------------------------------------- */
+th{
+    font-size: 14px;
+}
+.column-mini{
+    width: 5%;
+}
+.column-small{
+    width: 7%;
+}
+.column-medium{
+    width: 10%;
+}
+.column-large{
+    width: 12%;
+}
+.column-xlarge{
+    width: 15%;
+}
+.column-xxlarge{
+    width: 25%;
+}
+.column-xxxlarge{
+    width: 35%;
+}
+
+.column-title{
+    width: 25%;
+    font-size: 16px;
+}
+
+td span{
+    display: block;
+}
+
+span.title{
+    font-size: 18px;
+}
+span.title-addl{
+    font-size: 11px;
+    color: #7C7C7C;
+}
+
+td.column-date abbr{
+    border-bottom: 1px dotted #666;
+}
+
+/** list display **/
+ul.list-panel{
+    padding:20px 0;
+    list-style: none;
+    margin: 0;
+    font-size: 11px;
+}
+
+ul.list-panel li{
+    border-bottom: 1px dotted #666;
+    padding-bottom: 10px;
+    margin: 10px 0;
+}
+
+ul.list-panel li img{
+    width: 50px;
+}
+
+.media-body{
+    width: 65%;
+}
+
+.media-body section.title{
+    font-size: 14px;
+    font-weight: bold;
+    font-family: tahoma;
+}
+
+.media-body p{
+    line-height: 16px;
+}
+
+.media-action{
+    width: 15%;
+    overflow: hidden;
+    padding-left: 15px;
+    border-left: 1px solid #666;
+    min-height: 75px;
+}
+
+.media-action span{
+    display: block;
+    padding-bottom: 3px;
+}
+
+
+/* FOOTER -------------------------------------------------------------- */
+#footer	{
+    height: 70px;
+    margin: 10px auto 0px auto;
+    padding: 0px 0 0 0;
+    text-align: left;
+    min-width: 780px;
+    max-width: 1260px;
+}
+#footer-left	{
+    color: #818181;
+    font-size: 11px;
+    line-height: 11px;
+    padding: 15px 0 15px 25px;
+    margin: 0 20px;
+
+    border-top: 1px solid #dbdbdb;
+    border-bottom: 1px solid #dbdbdb;
+    background: url(../images/cms/icon_idlogo.jpg) no-repeat 0 12px;
+}
+#footer-left a	{
+    color: #818181;
+    text-decoration: none;
+}
+#footer-left 	 a.selected,
+#footer-left 	 a:hover	{
+    color: #000;
+    text-decoration: none;
+}
+
+/* COLOR SWATCH -------------------------------------------------------------- */
+
+span.swatch{
+    width: 10px;
+    height: 10px;
+    border: 1px solid #CCCCCC;
+    padding: 0px 8px;
+    background-color: #f5f5f5;
+}
+
+
+/* LOGIN PAGE -------------------------------------------------------------- */
+#login-bg{
+    background: url(../images/cms/login_bg.jpg) no-repeat top center;
+}
+
+#login-holder	{
+    margin: 0px auto 0 auto;
+    width: 508px;
+}
+#loginbox	{
+    background: url(../images/cms/loginbox_bg.png) no-repeat;
+    font-size: 12px;
+    height: 212px;
+    line-height: 12px;
+    padding-top: 60px;
+    position: relative;
+    width: 508px;
+}
+#forgotbox	{
+    background: url(../images/cms/loginbox_bg.png) no-repeat;
+    display: none;
+    font-size: 12px;
+    height: 212px;
+    line-height: 12px;
+    padding-top: 60px;
+    position: relative;
+    width: 508px;
+}
+#login-inner	{
+    color: #161616;
+    font-family: Tahoma;
+    font-size: 13px;
+    line-height: 12px;
+    margin: 0 auto;
+    width: 310px;
+}
+#login-inner label	{
+    color: #161616;
+    cursor: pointer;
+    font-family: Tahoma;
+    font-weight: bold;
+    line-height: 12px;
+    padding-left: 10px;
+
+}
+.checkbox-size	{
+    width:13px;
+    height:13px;
+    margin: 5px 0;
+    float: left;
+}
+
+#login-inner label.login-check{
+    line-height: 13px;
+    margin-left: 15px;
+}
+
+#login-inner th	{
+    padding: 0 0 6px 0;
+    text-align: left;
+    width: 95px;
+}
+#login-inner td	{
+    padding: 0 0 6px 0;
+}
+
+/* only for login box */
+input[type="text"].login-inp,
+input[type="password"].login-inp
+{
+    background: url(../images/cms/inp_login.gif) no-repeat;
+    border: none;
+    color: #ffffff;
+    font-size: 16px;
+    height: 28px;
+    padding: 6px 6px 0 10px;
+    width: 204px;
+}
+
+input[type="text"].login-inp:focus,
+input[type="password"].login-inp:focus
+{
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(236, 231, 224, 0.60);
+    outline: 0 none;
+}
+
+#logo-login	{
+    height: 35px;
+    margin: 145px 0 0 15px;
+}
+a.forgot-pwd	{
+    bottom: 30px;
+    color: #161616;
+    font-family: Tahoma;
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 12px;
+    position: absolute;
+    right: 40px;
+}
+a:hover.forgot-pwd	{
+    color: #fff;
+}
+#forgotbox-text	{
+    color: #161616;
+    font-family: Tahoma;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 12px;
+    margin: 0 auto 40px auto;
+    width: 380px;
+}
+#forgot-inner	{
+    color: #161616;
+    font-family: Tahoma;
+    font-size: 13px;
+    line-height: 12px;
+    margin: 0 auto;
+    width: 330px;
+}
+#forgot-inner label	{
+    color: #161616;
+    cursor: pointer;
+    font-family: Tahoma;
+    font-weight: bold;
+    line-height: 12px;
+    padding-left: 10px;
+}
+#forgot-inner th	{
+    padding: 0 0 6px 0;
+    text-align: left;
+    width: 110px;
+}
+#forgot-inner td	{
+    padding: 0 0 6px 0;
+}
+a.back-login	{
+    background: url(../images/cms/icon_back_login.gif) no-repeat 0 4px;
+    bottom: 30px;
+    color: #161616;
+    font-family: Tahoma;
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 12px;
+    padding: 0 0 0 10px;
+    position: absolute;
+    right: 40px;
+}
+a:hover.back-login	{
+    color: #fff;
+}
+#login-inner .submit-login	{
+    background: url(../images/cms/submit_login.gif) no-repeat;
+    border: none;
+    cursor: pointer;
+    display: block;
+    height: 29px;
+    text-indent: -3000px;
+    width: 73px;
+}
+#login-inner .submit-login:hover	{
+    background: url(../images/cms/submit_login.gif) no-repeat 0 -29px;
+}
+
+i.icon-tw{
+    background: url(../images/twitter-16x16.png);
+    height: 16px;
+    margin-right: 2px;
+    width: 16px;
+}
+
+i.icon-fb{
+    background: url(../images/facebook-16x16.png);
+    height: 16px;
+    margin-right: 2px;
+    width: 16px;
+}
+
+i.icon-gp{
+    background: url(../images/googleplus_icon_16px.gif);
+    height: 16px;
+    margin-right: 2px;
+    width: 16px;
+}
+
+.spanErrorText{
+    display: none;
+}
